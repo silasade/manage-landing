@@ -1,7 +1,7 @@
 # About
   A Landing page built with React Js that gives information about "Manage" Company
 ## Live URL
- (https://manage-landing-git-main-silas-projects-e23c2a33.vercel.app/)
+ https://manage-landing-git-main-silas-projects-e23c2a33.vercel.app/
 ## Tools and Libraries used
   1. React Js
   2. React Bootstrap

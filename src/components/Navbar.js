@@ -63,7 +63,7 @@ function Navbar(){
                 <img src={logo}  alt="logo"/>
             </NavLink>
             </div>
-            <div className="links" style={{display:width<=700 && !menus? 'none': 'flex'  ,flexDirection:width<=700 ? "column": 'row', justifyContent:'center', position:width<=700 && 'absolute', marginLeft: width<=700 && '10px', marginRight: width<=700 && '10px'}}>
+            <div className="links" style={{display:width<=700 && !menus? 'none': 'flex'  ,flexDirection:width<=700 ? "column": 'row', justifyContent:'center', position:width<=700 && 'absolute', marginLeft: width<=700 && '-20px', marginRight: width<=700 && '50px'}}>
                 <NavLink onClick={CloseMenu} to="/Pricing">Pricing</NavLink>
                 <NavLink onClick={CloseMenu} to="/Product">Product</NavLink>
                 <NavLink onClick={CloseMenu} to="/About">About us</NavLink>

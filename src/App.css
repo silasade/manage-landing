@@ -1,38 +1,385 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  scroll-behavior: smooth;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 35px;
+}
+.App{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  background-image: url('./components/bg-tablet-pattern.svg');
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.simple{
+  width: 75%;
+}
+h4{
+  font-size: 35px;
+}
+
+.first-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+.links{
+  display: flex;
+  gap: 1%; 
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 30%;
+}
+.first{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+ text-align: left;
+ 
+ gap: 10%;
+}
+h3{
+  font-size: 250%;
+}
+.link{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.graph{
+  width: 450px;
+}
+.first-inner{
+  width: 50%;
+}
+.second{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 5%;
+  
+}
+.man{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.track{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 50%;
+}
+.number{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.company{
+  display: flex;
+  flex-direction: row;
+}
+b{
+  font-weight: bolder;
+}
+.comment{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2%;
+  gap: 10%;
+ height: 150px;
+}
+.comments{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 55px;
+  
+}
+h3{
+  color: hsl(233, 12%, 13%);
+}
+.digit{
+  background-color: hsl(12, 88%, 59%);
+  padding: 10px;
+  width: 50px;
+  text-align: center;
+  color: hsl(13, 100%, 96%);
+  border-radius: 45px;
+}
+a{
+  color:hsl(233, 12%, 13%) ;
+  text-decoration: none;
+}
+a:hover{
+  color: hsl(227, 12%, 61%);
+}
+.avar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+.avatars{
+  flex: 35%;
+  gap: 5%;
+}
+.pfp{
+  max-width: 25%;
+  margin-top: -55px;
+}
+.comment{
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(227, 12%, 61%);
+}
+.steep{
+  color: hsl(12, 88%, 59%);
+}
+button{
+  border: 0;
+  border-radius: 45px;
+  background-color: hsl(12, 88%, 59%);
+  color: hsl(13, 100%, 96%);
+  padding: 10px;
+  width: 140px;
+  box-shadow: -1px 4px 16px 0px rgba(242,95,58,0.75);
+-webkit-box-shadow: -1px 4px 16px 0px rgba(242,95,58,0.75);
+-moz-box-shadow: -1px 4px 16px 0px rgba(242,95,58,0.75);
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  border: 0;
+  border-radius: 45px;
+  padding: 10px;
+  outline: 0;
 }
+input[type='submit']{
+  background-color: hsl(12, 88%, 59%);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+button:hover{
+  color: hsl(0, 0%, 98%);
+  cursor: pointer;
+}
+.simplify{
+  display: flex;
+  align-items: center;
+  background-color: hsl(12, 88%, 59%);
+  justify-content: space-between;
+  background-image: url('./components/bg-simplify-section-desktop.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 100px;
+  color:  hsl(13, 100%, 96%);
+  
+}
+.simplify button{
+  background-color:hsl(13, 100%, 96%) ;
+  color: hsl(12, 88%, 59%);
+
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  background-color:hsl(233, 12%, 13%) ;
+  justify-content: space-between;
+  padding: 30px;
+  color: hsl(13, 100%, 96%);
+  fill: hsl(13, 100%, 96%);
+}
+.NavLink{
+  color:hsl(13, 100%, 96%);
+}
+.NavLink:hover{
+  color:hsl(12, 88%, 59%)
+}
+.images{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.second-link, .first-link{
+  display: flex;
+  flex-direction: column;
+}
+.tt{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+ 
+}
+@media(max-width:1075px){
+  .links{
+    width: 40%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media(max-width:1000px){
+  h3{
+    font-size: 200%;
+  }
+  p, .links,.body{
+    font-size: 15px;
+  }
+  .body{
+    font-size: 12px;
+  }
+  .graph{
+    width: 400px;
+  }
+  h4{
+    font-size: 25px;
+  }
+}
+@media(max-width:830px){
+  h3{
+    font-size: 150%;
+  }
+  p, .links{
+    font-size: 13px;
+  }
+  .graph{
+    width: 350px;
+  }
+  .links{
+    width: 50%;
+  }
+  h4{
+    font-size: 20px;
+  }
+  .body{
+    font-size: 11px;
+  }
+  .avatars{
+    flex: 40%;
+  }
+}
+@media(max-width:700px){
+  .simplify{
+    background-image: url('./components/bg-simplify-section-mobile.svg');
+  }
+  .links{
+    width: 95%;
+    text-align: center;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .first-main{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    gap: 15%;
+  }
+  .first, .first-inner{
+    width: 100%;
+    text-align: center;
+  }
+  .first{
+    gap: 25px;
+  }
+  h3{
+    font-size: 150%;
+  }
+  h4{
+    font-size: 17px;
+  }
+  .second{
+    flex-direction: column;
+    text-align: center; 
+    gap: 55px;
+  }
+  .man{
+    width: 100%;
+
+  }
+  .number{
+    width: 100%;
+  }
+  .simplify{
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    gap: 15px;
+  }
+  .simple{
+    width: 100%;
+  }
+  .footer{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .graph{
+    width: 100%;
+  }
+  
+  .links{
+    color: hsl(227, 12%, 61%);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 15px;
+    background-color: hsl(0, 0%, 98%);
+    font-size: 20px;
+  }
+  .track{
+    width: 100%;
+  }
+  .company{
+    text-align: center;
+  }
+  .pfp{
+    max-width: 20%;
+    margin-top: -100px;
+    
+  }
+  .simplify{
+    background-image: url('./components/bg-simplify-section-mobile.svg');
+
+  }
+  .comments{
+    flex: 100%;
+    gap: 30px;
+  }
+  .comment{
+    height: 100%;
+    width: 100%;
+  }
+  .body{
+    font-size: 10px;
+  }
+  .tt{
+    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .App{
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .comment{
+    margin: 0;
+  }
+}
+@media(max-width: 450px){
+  h3{
+    font-size: 120%;
+  }
+  h4{
+    font-size: 15px;
   }
 }
